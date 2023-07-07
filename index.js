@@ -247,6 +247,7 @@ const modeInputHelper = (modeInput) => {
         remainingTime = undefined;
         mode = modeInput;
         pomState = "start";
+        updatePomState();
         updateTimer();
     }
 }
