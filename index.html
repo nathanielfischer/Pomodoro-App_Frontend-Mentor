@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Roboto+Slab:wght@400;700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Pomodoro app</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div id="logo">
+      <embed src="assets/logo.svg" />
+    </div>
+
+
+    <div id="break">
+      <div>
+        <input type="radio" id="pomodoro" name="break-setting" checked="checked" />
+        <label for="pomodoro">pomodoro</label>
+      </div>
+      <div>
+        <input type="radio" id="short" name="break-setting" />
+        <label for="short">short break</label>
+      </div>
+      <div>
+        <input type="radio" id="long" name="break-setting" />
+        <label for="long">long break</label>
+      </div>
+    </div>
+
+
+    <div id="timer">
+      <div class="timer-container">
+        <div class="circular-progress" data-inner-circle-color="#1E213F" data-percentage="40"
+          data-progress-color="#F87070" data-bg-color="#1E213F">
+
+          <div class="inner-circle">
+            <h1>17:59</h1>
+            <!-- start
+            pause
+            restart -->
+            <span>start</span>
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <div id="settings-icon">
+      <img src="assets/icon-settings.svg" />
+    </div>
+
+
+
+
+
+    <div id="modal" class="hide">
+      <div class="settings-header">
+        <h2>Settings</h2>
+
+        <img src="assets/icon-close.svg" alt="">
+      </div>
+
+      <div class="break-full-width"></div>
+
+      <h4>Time (minutes)</h4>
+      <div class="duration-settings">
+        <label for="">pomodoro</label>
+        <div class="number-input">
+          <img class="input-hover-icon-up" src="assets/icon-arrow-up.svg">
+          <img class="input-hover-icon-down" src="assets/icon-arrow-down.svg">
+          <input type="number" value="25">
+        </div>
+        <label for="">short break</label>
+        <div class="number-input">
+          <img class="input-hover-icon-up" src="assets/icon-arrow-up.svg">
+          <img class="input-hover-icon-down" src="assets/icon-arrow-down.svg">
+          <input type="number" value="5">
+        </div>
+        <label for="">long break</label>
+        <div class="number-input">
+          <img class="input-hover-icon-up" src="assets/icon-arrow-up.svg">
+          <img class="input-hover-icon-down" src="assets/icon-arrow-down.svg">
+          <input type="number" value="15">
+        </div>
+      </div>
+
+      <div class="break"></div>
+
+      <h4>Font</h4>
+      <div class="modal-radio font-selector">
+        <div>
+          <input type="radio" id="kumbh" name="font-setting" checked="checked" />
+          <label for="kumbh">Aa</label>
+        </div>
+        <div>
+          <input type="radio" id="roboto" name="font-setting" />
+          <label for="roboto">Aa</label>
+        </div>
+        <div>
+          <input type="radio" id="space" name="font-setting" />
+          <label for="space">Aa</label>
+        </div>
+      </div>
+
+
+      <div class="break"></div>
+      
+      <h4>Color</h4>
+      <div class="modal-radio color-selector">
+        <div>
+          <input type="radio" id="red" name="color-setting" checked="checked" />
+          <label for="red"></label>
+        </div>
+        <div>
+          <input type="radio" id="turquoise" name="color-setting" />
+          <label for="turquoise"></label>
+        </div>
+        <div>
+          <input type="radio" id="purple" name="color-setting" />
+          <label for="purple"></label>
+        </div>
+      </div>
+
+      <br>
+      <button class="btn">Apply</button>
+    </div>
+
+  </div>
+
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
