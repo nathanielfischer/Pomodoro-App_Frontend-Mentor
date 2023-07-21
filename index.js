@@ -61,16 +61,19 @@ document.querySelector(".inner-circle").addEventListener('click', (event) => {
 // Settings Button click -> open Settings
 document.querySelector("#settings-icon img").addEventListener('click', (event) => {
     document.querySelector("#modal").classList.remove("hide");
+    document.querySelector("#backdrop").classList.remove("hide");
 });
 
 // Settings Close Button click -> close Settings, discard changes
 document.querySelector(".settings-header img").addEventListener('click', (event) => {
     document.querySelector("#modal").classList.add("hide");
+    document.querySelector("#backdrop").classList.add("hide");
 });
 
 // Settings Apply Button click -> close Settings, apply changes
 document.querySelector("#modal .btn").addEventListener('click', (event) => {
     document.querySelector("#modal").classList.add("hide");
+    document.querySelector("#backdrop").classList.add("hide");
     applySettingsHandler();
 });
 

@@ -20,56 +20,6 @@
 <body>
   <div class="container">
 
-    <div id="logo">
-      <embed src="assets/logo.svg" />
-    </div>
-
-
-    <div id="break">
-      <div>
-        <input type="radio" id="pomodoro" name="break-setting" checked="checked" />
-        <label for="pomodoro">pomodoro</label>
-      </div>
-      <div>
-        <input type="radio" id="short" name="break-setting" />
-        <label for="short">short break</label>
-      </div>
-      <div>
-        <input type="radio" id="long" name="break-setting" />
-        <label for="long">long break</label>
-      </div>
-    </div>
-
-
-    <div id="timer">
-      <div class="timer-container">
-        <div class="circular-progress" data-inner-circle-color="#1E213F" data-percentage="40"
-          data-progress-color="#F87070" data-bg-color="#1E213F">
-
-          <div class="inner-circle">
-            <h1>17:59</h1>
-            <!-- start
-            pause
-            restart -->
-            <span>start</span>
-          </div>
-
-
-
-        </div>
-
-      </div>
-    </div>
-
-
-    <div id="settings-icon">
-      <img src="assets/icon-settings.svg" />
-    </div>
-
-
-
-
-
     <div id="modal" class="hide">
       <div class="settings-header">
         <h2>Settings</h2>
@@ -141,6 +91,60 @@
       <br>
       <button class="btn">Apply</button>
     </div>
+
+    <div id="backdrop" class="hide"></div>
+
+    <div id="logo">
+      <embed src="assets/logo.svg" />
+    </div>
+
+
+    <div id="break">
+      <div>
+        <input type="radio" id="pomodoro" name="break-setting" checked="checked" />
+        <label for="pomodoro">pomodoro</label>
+      </div>
+      <div>
+        <input type="radio" id="short" name="break-setting" />
+        <label for="short">short break</label>
+      </div>
+      <div>
+        <input type="radio" id="long" name="break-setting" />
+        <label for="long">long break</label>
+      </div>
+    </div>
+
+
+    <div id="timer">
+      <div class="timer-container">
+        <div class="circular-progress" data-inner-circle-color="#1E213F" data-percentage="40"
+          data-progress-color="#F87070" data-bg-color="#1E213F">
+
+          <div class="inner-circle">
+            <h1>17:59</h1>
+            <!-- start
+            pause
+            restart -->
+            <span>start</span>
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <div id="settings-icon">
+      <img src="assets/icon-settings.svg" />
+    </div>
+
+
+
+
+
+    
 
   </div>
 

@@ -210,21 +210,36 @@ h4 {
 #modal {
     background-color: var(--settings-white);
     border-radius: 1rem;
-    /* position: absolute;
-    top: 4rem; */
-    transform: translate(0, -121%);
     text-align: center;
     padding: 1rem 2rem;
+
+    position: fixed;
+    z-index: 30;
+    margin: 0 auto;
+    margin-top: 1rem;
+    left: 0;
+    right: 0;
+    width: 22rem;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 450px) {
     #modal {
-        transform: translate(0, -107%);
+        width: 70%;
     }
 
     .inner-circle h1 {
         font-size: 85px;
     }
+}
+
+#backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.);
 }
 
 .break-full-width {
